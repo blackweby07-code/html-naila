@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>N&M Delights | Abele Walls</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ff8c00, #b34700);
+    color: #fff;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+header h1 span {
+    color: #ffd27d;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* floating image */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+.info {
+    max-width: 400px;
+    animation: slideRight 1.2s ease;
+}
+
+@keyframes slideRight {
+    from { transform: translateX(-40px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* ===== FLAVOURS ===== */
+.flavors {
+    list-style: none;
+    padding: 0;
+}
+
+.flavors li {
+    margin: 8px 0;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.flavors li:hover {
+    transform: translateX(10px);
+}
+
+/* ===== PRICE ===== */
+.price {
+    background: #ff6a00;
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+/* ===== LOCATION ===== */
+.location {
+    background: rgba(0,0,0,0.25);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact div {
+    background: rgba(0,0,0,0.3);
+    padding: 15px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact div:hover {
+    background: #ff6a00;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.85;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <h1>N&M <span>Delights</span></h1>
+    <h2>Abele Walls</h2>
+    <p>Satisfying your Tastebuds</p>
+</header>
+
+<section class="hero">
+    <img src="./img/th.jpg" alt="Abele Walls">
+
+    <div class="info">
+        <h2>Available Flavours</h2>
+        <ul class="flavors">
+            <li style="
+                font-style: italic;
+                font-size:40px;
+                ">🍦 Vanilla</li>
+            <li style="
+                font-style: italic;
+                font-size:40px;
+                ">🥧 Custard</li>
+            <li style="
+                font-style: italic;
+                font-size:40px;
+                ">🍫 Chocolate</li>
+            <li style="
+                font-style: italic;
+                font-size:40px;
+                ">🍓 Strawberry</li>
+            <li style="
+                font-style: italic;
+                font-size:40px;
+                ">🍌 Banana</li>
+        </ul>
+        <div class="price">Just GHC 5</div>
+    </div>
+</section>
+
+<section class="location">
+    <h3>Locate Us</h3>
+    <p>University of Ghana – Bani Hostel</p>
+</section>
+
+<section class="contact">
+    <div>📞 0531144254</div>
+    <div>💬 WhatsApp: 0531144254</div>
+    <div>👻 Snapchat: crazyfor_mjd</div>
+</section>
+
+<footer>
+    © 2026 N&M Delights. All Rights Reserved.
+</footer>
+
+</div>
+
+</body>
+</html>
